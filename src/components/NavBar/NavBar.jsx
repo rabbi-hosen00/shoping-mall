@@ -1,5 +1,5 @@
 
-const NavBar = ({selectedProducts}) => {
+const NavBar = ({selectedProducts,price}) => {
     return (
         <div className="bg-[#0000ff0a]">
             <nav className="flex justify-between max-w-screen-lg mx-auto ">
@@ -11,7 +11,7 @@ const NavBar = ({selectedProducts}) => {
                         <li ><a href="" >Home</a></li>
                         <li ><a href="" >Product</a></li>
                         <li ><a href="" >Cart {selectedProducts.length}</a></li>
-                        <li className="mr-7" ><a href="" >$ 500</a></li>
+                        <li className="mr-7" ><a href="" >$ {price}</a></li>
                     </ul>
                 </div>
             </nav>

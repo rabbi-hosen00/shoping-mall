@@ -17,6 +17,27 @@ function App() {
 
   const [selectedProducts, setSelctedProducts] = useState([])
 
+  const [price, setPrice] = useState(500)
+
+ const handleIncreasePrice =(pr)=>{
+  setPrice(price + pr)
+ }
+
+ const handleDecreasePrice =(id)=>{
+  const product = selectedProducts.find((p) => p.id == id)
+  setPrice(price - product.price)
+ }
+
+
+  const handleDelete = (id) => {
+    handleDecreasePrice(id)
+    const newProduct = selectedProducts.filter((p)=>(
+      p.id !== id
+    ))
+    setSelctedProducts(newProduct)
+  }
+
+
 
   const handleSelectedProduct = (product) => {
     const isexist = selectedProducts.find((p) => p.id === product.id)
@@ -24,12 +45,13 @@ function App() {
     if (isexist) {
       alert("er add kora jabe nah")
     } else {
+      handleIncreasePrice(product.price)
       const newProducts = [...selectedProducts, product];
       setSelctedProducts(newProducts);
     }
 
   }
-  
+
 
 
 
@@ -51,7 +73,9 @@ function App() {
 
   return (
     <>
-      <NavBar selectedProducts={selectedProducts} />
+      <NavBar 
+      selectedProducts={selectedProducts} 
+      price={price}/>
 
       <div className='flex justify-around'>
         <AllProducts
@@ -59,9 +83,10 @@ function App() {
 
         <CartContainer
           handleIsActiveState={handleIsActiveState}
-          isActive={isActive} 
+          isActive={isActive}
           selectedProducts={selectedProducts}
-          />
+          handleDelete={handleDelete}
+        />
       </div>
 
 

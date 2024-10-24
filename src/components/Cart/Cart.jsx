@@ -1,6 +1,6 @@
 
 
-const Cart = ({selectedProducts}) => {
+const Cart = ({selectedProducts,handleDelete}) => {
     
     return (
         <div>
@@ -12,7 +12,7 @@ const Cart = ({selectedProducts}) => {
                             <img className="w-14" src={product.image}></img>
                             <p>{product.name}</p>
                             <p className="ml-2">{product.price}</p>
-                            <button className="bg-red-500 p-1 px-2 ml-2 rounded-sm text-white">Delete</button>
+                            <button onClick={()=>handleDelete(product.id)} className="bg-red-500 p-1 px-2 ml-2 rounded-sm text-white">Delete</button>
                         </div>
                     </div>
                 ))

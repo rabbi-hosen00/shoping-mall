@@ -2,7 +2,7 @@ import About from "../About/About";
 import Cart from "../Cart/Cart";
 
 
-const CartContainer = ({handleIsActiveState, isActive, selectedProducts}) => {
+const CartContainer = ({handleIsActiveState, isActive, selectedProducts,handleDelete}) => {
     return (
         <div className="mt-7  ">
             <h1 className="text-2xl">CartContainer.jsx</h1>
@@ -13,7 +13,9 @@ const CartContainer = ({handleIsActiveState, isActive, selectedProducts}) => {
             </div>
 
             {
-                isActive.cart? <Cart selectedProducts={selectedProducts}/> 
+                isActive.cart? <Cart 
+                selectedProducts={selectedProducts}
+                handleDelete={handleDelete}/> 
                 :<About />
             }
             
