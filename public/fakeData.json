@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "name": "Smart Watch",
+      "image": "https://www.startech.com.bd/image/cache/catalog/smart-watch/yison/celebrat-sw6pro/celebrat-sw6pro-04-228x228.webp",
+      "description": "A sleek, high-performance smartwatch with health tracking features.",
+      "price": 199.99,
+      "category": "Electronics",
+      "isFeature": true
+    },
+    {
+      "id": 2,
+      "name": "Gaming Laptop",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/2/UI/OH/VJ/12393365/apple-mabbook-air-mini-500x500.jpg",
+      "description": "A powerful gaming laptop with high-end graphics and fast performance.",
+      "price": 1299.99,
+      "category": "Computers",
+      "isFeature": false
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "image": "https://gearbuzzbd.com/wp-content/uploads/2024/08/Anker-Soundcore-Glow-Mini-Portable-Speaker-With-360%C2%B0-Sound.jpg",
+      "description": "A portable Bluetooth speaker with excellent sound quality and long battery life.",
+      "price": 59.99,
+      "category": "Audio",
+      "isFeature": true
+    },
+    {
+      "id": 4,
+      "name": "Fitness Tracker",
+      "image": "https://pyxis.nymag.com/v1/imgs/921/c0c/d56eeaa21522d8918ee1cedde9dea91293.rsquare.w600.jpg",
+      "description": "A lightweight fitness tracker with multiple exercise modes and heart rate monitoring.",
+      "price": 89.99,
+      "category": "Wearables",
+      "isFeature": false
+    },
+    {
+      "id": 5,
+      "name": "Noise Cancelling Headphones",
+      "image": "https://www.cnet.com/a/img/resize/32fdbc788166aa7cfc2cf96f280a7a8c8e965118/hub/2024/03/22/7b031d0c-a3ae-4098-b7eb-1c2490756196/edifier-w820nb-plus-gray.jpg?auto=webp&fit=crop&height=576&width=768",
+      "description": "Comfortable, over-ear headphones with active noise cancellation and premium sound.",
+      "price": 299.99,
+      "category": "Audio",
+      "isFeature": true
+    }
+  ]
